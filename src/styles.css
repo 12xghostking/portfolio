@@ -157,7 +157,7 @@ a:hover {
 
 .about-me {
     width: 50%;
-    text-align: center;
+    text-align: justify;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -211,4 +211,95 @@ font-size:20px;
 }
 h2:hover {
     color: rgb(255,0,166);
+}
+.floating-resume-bubble {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(255,0,166);
+    color: white;
+    width: 60px; /* Initial width */
+    height: 60px; /* Initial height */
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.floating-resume-bubble i {
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.floating-resume-bubble:hover i {
+    transform: scale(0); /* Icon disappears */
+}
+
+.tooltip-text {
+    position: absolute;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out 0.3s; /* Delayed appearance */
+}
+
+.floating-resume-bubble:hover .tooltip-text {
+    opacity: 1;
+}
+
+.floating-resume-bubble:hover {
+    width: 180px; /* Expanded width */
+    color: inherit; /* Resets to the default color */
+    text-decoration: none;
+    border-radius: 30px; /* Adjust for cylindrical shape */
+}
+/* .subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+} */
+
+.experience-entry {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.experience-entry a {
+    display: block;
+    margin-right: 20px;
+}
+
+.company-logo {
+    width: 100px; /* Adjust based on actual logo size */
+    height: auto;
+}
+
+.experience-details {
+    flex: 1;
+}
+
+.duration, .designation {
+    display: block;
+    font-weight: bold;
+    
+}
+
+.duration {
+    margin-bottom: 5px;
+}
+
+.designation {
+    margin-bottom: 10px;
+}
+
+.experience-details p {
+    margin: 0;
+   
 }
