@@ -39,7 +39,10 @@ h1:hover {
         font-weight: 500;
        
     }
-    
+    h1:hover {
+        transform: translateZ(30px);
+        text-shadow: 1px 1px 0 rgb(255,0,166), 2px 2px 0 rgb(255,0,166), 3px 3px 0 rgb(255,0,166);
+    }
     
 }
 h2 {
