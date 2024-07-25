@@ -194,6 +194,13 @@ a:hover {
     .sub-pages-footer {
         position: relative;
     }
+    .about-me {
+        width: 80%;
+        text-align: justify;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 
@@ -281,7 +288,13 @@ h2:hover {
     margin-bottom: 20px;
     color: #333;
 } */
+.exp{
+    width: 80%;
+    
+    display: flex;
+    flex-direction: column;
 
+}
 .experience-entry {
     display: flex;
     align-items: center;
@@ -319,4 +332,53 @@ h2:hover {
 .experience-details p {
     margin: 0;
    
+}
+@media only screen and (max-width: 600px) {
+    .exp{
+        width: 75%;
+        
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .experience-entry {
+        display: flex;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    
+    .experience-entry a {
+        display: block;
+        margin-right: 20px;
+    }
+    
+    .company-logo {
+        width: 70px; /* Adjust based on actual logo size */
+        height: auto;
+    }
+    
+    .experience-details {
+        flex: 1;
+    }
+    
+    .duration, .designation {
+        display: block;
+        font-weight: bold;
+        
+    }
+    
+    .duration {
+        margin-bottom: 5px;
+        font-size: small;
+    }
+    
+    .designation {
+        margin-bottom: 10px;
+        font-size: small;
+    }
+    
+    .experience-details p {
+        margin: 0;
+        font-size: 15px;
+    }
 }
