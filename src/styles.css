@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;300;400;500;700&display=swap');
 
 body {
-    background-color: rgb(20,20,20);
-    color: rgb(255,255,255);
+    background-color: rgb(20, 20, 20);
+    color: rgb(255, 255, 255);
     font-family: 'Josefin Sans', sans-serif;
     font-weight: 300;
 }
@@ -31,20 +31,23 @@ h1 {
 
 h1:hover {
     transform: translateZ(30px);
-    text-shadow: 1px 1px 0 rgb(255,0,166), 2px 2px 0 rgb(255,0,166), 3px 3px 0 rgb(255,0,166), 4px 4px 0 rgb(255,0,166), 5px 5px 0 rgb(255,0,166);
+    text-shadow: 1px 1px 0 rgb(255, 0, 166), 2px 2px 0 rgb(255, 0, 166), 3px 3px 0 rgb(255, 0, 166), 4px 4px 0 rgb(255, 0, 166), 5px 5px 0 rgb(255, 0, 166);
 }
+
 @media only screen and (max-width: 600px) {
     h1 {
         font-size: 50px;
         font-weight: 500;
-       
+
     }
+
     h1:hover {
         transform: translateZ(30px);
-        text-shadow: 1px 1px 0 rgb(255,0,166), 2px 2px 0 rgb(255,0,166), 3px 3px 0 rgb(255,0,166);
+        text-shadow: 1px 1px 0 rgb(255, 0, 166), 2px 2px 0 rgb(255, 0, 166), 3px 3px 0 rgb(255, 0, 166);
     }
-    
+
 }
+
 h2 {
     margin: 3px;
     font-weight: 300;
@@ -67,9 +70,9 @@ section {
 
 .hero-section {
     margin-top: 17vh;
-    text-align:center;
-    
-    
+    text-align: center;
+
+
 }
 
 .light-text {
@@ -79,13 +82,13 @@ section {
 footer {
     position: relative;
     bottom: 0;
-    left:0;
+    left: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-   z-index:0;
-    
+    z-index: 0;
+
 }
 
 footer ul {
@@ -95,7 +98,7 @@ footer ul {
 
 .options {
     display: flex;
-     align-items: center;
+    align-items: center;
     justify-content: center;
 }
 
@@ -105,13 +108,13 @@ footer ul {
 
 a {
     text-decoration: none;
-    color: rgb(255,255,255);
+    color: rgb(255, 255, 255);
 }
 
 .socials {
     width: 100px;
     height: 300px;
-    background-color: rgb(255,0,166);
+    background-color: rgb(255, 0, 166);
     border-radius: 30px 0 0 30px;
     position: fixed;
     right: 0;
@@ -120,9 +123,9 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-.socials {
-    display: none;
-}
+    .socials {
+        display: none;
+    }
 
 }
 
@@ -132,7 +135,7 @@ a {
 }
 
 .wave {
-    fill: rgb(0,0,0);
+    fill: rgb(0, 0, 0);
     width: 100vw;
     height: 60vh;
     position: fixed;
@@ -142,11 +145,11 @@ a {
 }
 
 .social svg {
-    fill: rgb(255,255,255);
+    fill: rgb(255, 255, 255);
 }
 
 a:hover {
-    color: rgb(255,0,166);
+    color: rgb(255, 0, 166);
 }
 
 /*work page*/
@@ -185,6 +188,7 @@ a:hover {
     border-radius: 50%;
     margin: 40px 10px 10px 10px;
 }
+
 .sub-pages-footer {
     position: fixed;
 }
@@ -194,6 +198,7 @@ a:hover {
     .sub-pages-footer {
         position: relative;
     }
+
     .about-me {
         width: 80%;
         text-align: justify;
@@ -230,23 +235,28 @@ a:hover {
     }
 
 }
-p{
-font-size:20px;
+
+p {
+    font-size: 20px;
 }
+
 h2:hover {
-    color: rgb(255,0,166);
+    color: rgb(255, 0, 166);
 }
+
 .floating-resume-bubble {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: rgb(255,0,166);
+    background-color: rgb(255, 0, 166);
     color: white;
-    width: 60px; /* Initial width */
-    height: 60px; /* Initial height */
+    width: 60px;
+    /* Initial width */
+    height: 60px;
+    /* Initial height */
     border-radius: 50%;
     text-align: center;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -262,14 +272,16 @@ h2:hover {
 }
 
 .floating-resume-bubble:hover i {
-    transform: scale(0); /* Icon disappears */
+    transform: scale(0);
+    /* Icon disappears */
 }
 
 .tooltip-text {
     position: absolute;
     white-space: nowrap;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out 0.3s; /* Delayed appearance */
+    transition: opacity 0.3s ease-in-out 0.3s;
+    /* Delayed appearance */
 }
 
 .floating-resume-bubble:hover .tooltip-text {
@@ -277,108 +289,157 @@ h2:hover {
 }
 
 .floating-resume-bubble:hover {
-    width: 180px; /* Expanded width */
-    color: inherit; /* Resets to the default color */
+    width: 180px;
+    /* Expanded width */
+    color: inherit;
+    /* Resets to the default color */
     text-decoration: none;
-    border-radius: 30px; /* Adjust for cylindrical shape */
+    border-radius: 30px;
+    /* Adjust for cylindrical shape */
 }
-/* .subtitle {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-    color: #333;
-} */
-.exp{
-    width: 80%;
-    
-    display: flex;
-    flex-direction: column;
 
+/* experience page */
+.experience-list {
+    width: min(90%, 980px);
+    margin-top: 12px;
 }
+
 .experience-entry {
     display: flex;
-    align-items: center;
-    margin-bottom: 30px;
+    flex-direction: column;
+    gap: 18px;
+    padding: 28px;
+    margin-bottom: 24px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
 }
 
-.experience-entry a {
-    display: block;
-    margin-right: 20px;
+.experience-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.experience-header a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .company-logo {
-    width: 100px; /* Adjust based on actual logo size */
+    width: 90px;
     height: auto;
+    border-radius: 12px;
 }
 
-.experience-details {
-    flex: 1;
+.company-info h3,
+.company-info h4 {
+    margin: 0;
 }
 
-.duration, .designation {
-    display: block;
-    font-weight: bold;
-    
+.company-info h3 {
+    font-size: 1.25rem;
+    margin-bottom: 4px;
+}
+
+.company-info h4 {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: rgb(255, 0, 166);
+    margin-bottom: 6px;
 }
 
 .duration {
-    margin-bottom: 5px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.8);
 }
 
-.designation {
-    margin-bottom: 10px;
-}
-
-.experience-details p {
+.experience-summary {
     margin: 0;
-   
+    line-height: 1.7;
 }
+
+.achievement-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.achievement-card {
+    padding: 16px;
+    border-radius: 14px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.achievement-card h5 {
+    margin: 0 0 8px;
+    font-size: 1rem;
+    color: rgb(255, 0, 166);
+}
+
+.achievement-card p {
+    margin: 0;
+    font-size: 0.98rem;
+    line-height: 1.6;
+}
+
+.tech-stack {
+    padding-top: 8px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    line-height: 1.7;
+}
+
+.tech-stack strong {
+    margin-right: 6px;
+}
+
+.sub-pages-footer {
+    position: static;
+    margin-top: 20px;
+}
+
 @media only screen and (max-width: 600px) {
-    .exp{
-        width: 75%;
-        
-        display: flex;
-        flex-direction: column;
-    
+    .experience-list {
+        width: 88%;
     }
+
     .experience-entry {
-        display: flex;
-        align-items: center;
-        margin-bottom: 30px;
+        padding: 20px;
+        gap: 14px;
     }
-    
-    .experience-entry a {
-        display: block;
-        margin-right: 20px;
+
+    .experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
     }
-    
+
     .company-logo {
-        width: 70px; /* Adjust based on actual logo size */
-        height: auto;
+        width: 72px;
     }
-    
-    .experience-details {
-        flex: 1;
+
+    .company-info h3 {
+        font-size: 1.05rem;
     }
-    
-    .duration, .designation {
-        display: block;
-        font-weight: bold;
-        
+
+    .company-info h4 {
+        font-size: 0.95rem;
     }
-    
+
     .duration {
-        margin-bottom: 5px;
-        font-size: small;
+        font-size: 0.9rem;
     }
-    
-    .designation {
-        margin-bottom: 10px;
-        font-size: small;
+
+    .experience-summary,
+    .achievement-card p,
+    .tech-stack {
+        font-size: 0.95rem;
     }
-    
-    .experience-details p {
-        margin: 0;
-        font-size: 15px;
+
+    .achievement-grid {
+        grid-template-columns: 1fr;
     }
 }
