@@ -4,158 +4,249 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Anmol's Experience</title>
+    <title>Anmol Bakshi | Work Experience & Engineering Impact</title>
+    <meta name="description"
+        content="Professional engineering journey of Anmol Bakshi: Software Engineer at Optum, Wiingy, and CsSolver. Enterprise cloud systems, DevSecOps, and applied AI.">
     <link rel="stylesheet" href="../styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
 <body>
-    <header>
-        <ul>
-            <a href="../../index.html">
-                <li>Home</li>
-            </a>
-            <a href="contact.html">
-                <li>Contact</li>
-            </a>
-        </ul>
-    </header>
-
-    <a href="https://drive.google.com/file/d/1ZCjaMGqt6O0eoYlDeIkvgaPk7QWKSDr4/view?usp=sharing" target="_blank"
-        class="floating-resume-bubble">
+    <!-- Floating Global Resume Bubble -->
+    <a href="https://drive.google.com/file/d/1M3r0CsTXHQgy0-f-5Xypg5fsP-s3IoOb/view?usp=drive_link" target="_blank"
+        class="floating-resume-bubble" aria-label="Download Resume">
         <i class="fas fa-file-alt"></i>
         <span class="tooltip-text">Download My Resume</span>
     </a>
 
+    <!-- Unified Glass Navigation Bar -->
+    <nav class="site-nav">
+        <div class="nav-glass-bar">
+            <a href="../../index.html" class="nav-brand">AB<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="experience.html" class="nav-link active">Experience</a></li>
+                <li><a href="work.html" class="nav-link">Projects</a></li>
+                <li><a href="stack.html" class="nav-link">Stack</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <section>
         <h2 class="subtitle">Experience</h2>
 
-        <div class="experience-list">
+        <div class="experience-list" style="width: min(92%, 1050px);">
+            <!-- OPTUM -->
             <article class="experience-entry">
                 <div class="experience-header">
                     <a href="https://www.optum.com/en/" target="_blank">
                         <img src="../images/optum.png" alt="Optum Logo" class="company-logo">
                     </a>
 
-                    <div class="company-info">
-                        <h3>Software Engineer</h3>
-                        <h4>Optum</h4>
-                        <span class="duration">July 2024 – Present</span>
+                    <div class="company-info" style="flex: 1;">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px;">
+                            <div>
+                                <h3 style="font-size: 1.35rem; font-weight: 700; color: #fff; margin: 0 0 4px;">Software
+                                    Engineer</h3>
+                                <h4 style="font-size: 1.1rem; font-weight: 500; color: var(--accent-pink); margin: 0;">
+                                    Optum • UnitedHealth Group</h4>
+                            </div>
+                            <div style="text-align: right;">
+                                <span class="duration"
+                                    style="background: rgba(255, 255, 255, 0.08); padding: 4px 12px; border-radius: 999px; font-size: 0.88rem; display: inline-block;">
+                                    July 2024 – Present
+                                </span>
+                                <div style="font-size: 0.82rem; color: rgba(255, 255, 255, 0.6); margin-top: 4px;">
+                                    Gurugram, India</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <p class="experience-summary">
-                    Building secure enterprise healthcare platforms on Microsoft Azure using a distributed
-                    architecture of <strong>24 Azure Service Bus–driven microservices</strong> supporting
-                    provider claim processing, workflow orchestration, and cloud-native services.
+                <p class="experience-summary"
+                    style="font-size: 1.02rem; line-height: 1.65; color: rgba(255, 255, 255, 0.9);">
+                    Core engineering contributor on enterprise healthcare applications supporting provider insurance
+                    claim processing. Maintaining production ownership across a distributed architecture of <strong>24
+                        Azure Service Bus–driven microservices</strong>, delivering secure features, platform
+                    enhancements, and defect resolutions within 2.5-week Agile release cycles.
+                </p>
+
+                <!-- 6 Structured Impact Cards -->
+                <div class="achievement-grid">
+                    <div class="achievement-card">
+                        <h5><i class="fas fa-cubes"></i> Distributed Microservices</h5>
+                        <p>Designed backend components responsible for request serialization, deserialization,
+                            transaction management, inbound request processing, clearinghouse routing, and API
+                            orchestration.</p>
+                    </div>
+
+                    <div class="achievement-card">
+                        <h5><i class="fas fa-cloud"></i> Cloud Platform & IaC</h5>
+                        <p>Provisioned and managed Azure App Services, AKS, Azure SQL, Functions, and APIM. Implemented
+                            declarative Infrastructure-as-Code using Terraform with automated disaster recovery
+                            exercises.</p>
+                    </div>
+
+                    <div class="achievement-card">
+                        <h5><i class="fas fa-shield-alt"></i> Enterprise DevSecOps</h5>
+                        <p>Modernized deployment workflows using GitHub Actions, Terraform, Artifactory, and golden
+                            build images. Eliminated long-lived credentials by adopting OIDC workload identity
+                            federation.</p>
+                    </div>
+
+                    <div class="achievement-card">
+                        <h5><i class="fas fa-user-lock"></i> Security & Secret Rotation</h5>
+                        <p>Remediated 100+ security findings across DAST, penetration testing, and cloud configurations
+                            spanning 4 engineering teams. Automated Azure Key Vault zero-downtime secret rotation.</p>
+                    </div>
+
+                    <div class="achievement-card">
+                        <h5><i class="fas fa-brain"></i> Applied AI Integrations</h5>
+                        <p>Delivered AI-powered provider communication features with automated conversation
+                            summarization, Retrieval-Augmented Generation (RAG) over Azure AI Search, and hallucination
+                            guardrails.</p>
+                    </div>
+
+                    <div class="achievement-card">
+                        <h5><i class="fas fa-chart-line"></i> Observability & Quality</h5>
+                        <p>Engineered telemetry-driven automated incident generation with Azure Monitor, reducing MTTR
+                            by ~75%. Built team's Cypress framework, scaling automated regression from 0% to 70%+.</p>
+                    </div>
+                </div>
+
+                <div class="tech-stack" style="font-size: 0.92rem; color: rgba(255, 255, 255, 0.85);">
+                    <strong style="color: var(--accent-pink);">Tech Stack:</strong>
+                    .NET Core • C# • Azure Service Bus • Azure Kubernetes Service (AKS) • Terraform • GitHub Actions •
+                    Azure OpenAI • Azure AI Search • Azure API Management • Azure SQL • Azure Key Vault • Cypress •
+                    Power BI • OIDC Federation
+                </div>
+            </article>
+
+            <!-- WIINGY -->
+            <article class="experience-entry">
+                <div class="experience-header">
+                    <a href="https://wiingy.com/" target="_blank">
+                        <img src="../images/wiingy.png" alt="Wiingy Logo" class="company-logo">
+                    </a>
+
+                    <div class="company-info" style="flex: 1;">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px;">
+                            <div>
+                                <h3 style="font-size: 1.35rem; font-weight: 700; color: #fff; margin: 0 0 4px;">Software
+                                    Development Intern</h3>
+                                <h4 style="font-size: 1.1rem; font-weight: 500; color: var(--accent-pink); margin: 0;">
+                                    Wiingy</h4>
+                            </div>
+                            <div style="text-align: right;">
+                                <span class="duration"
+                                    style="background: rgba(255, 255, 255, 0.08); padding: 4px 12px; border-radius: 999px; font-size: 0.88rem; display: inline-block;">
+                                    Nov 2023 – May 2024
+                                </span>
+                                <div style="font-size: 0.82rem; color: rgba(255, 255, 255, 0.6); margin-top: 4px;">
+                                    Bangalore, India</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="experience-summary"
+                    style="font-size: 1.02rem; line-height: 1.65; color: rgba(255, 255, 255, 0.9);">
+                    Engineered full-stack internal enterprise applications migrating complex spreadsheet-driven
+                    operational workflows into centralized business platforms, significantly improving data integrity,
+                    reducing processing latency, and empowering executive decision-making.
                 </p>
 
                 <div class="achievement-grid">
                     <div class="achievement-card">
-                        <h5>Cloud Engineering</h5>
-                        <p>
-                            Developed enterprise applications using
-                            <strong>.NET, React, Azure, AKS, Azure SQL and APIM.</strong>
-                        </p>
+                        <h5><i class="fas fa-layer-group"></i> Workflow Centralization</h5>
+                        <p>Replaced fragile spreadsheet workflows with scalable web applications built with React,
+                            Node.js, and SQL, standardizing operations across business units.</p>
                     </div>
-
                     <div class="achievement-card">
-                        <h5>Security</h5>
-                        <p>
-                            Resolved <strong>100+ vulnerabilities</strong> across secure coding, DAST, cloud
-                            configuration and penetration testing while supporting <strong>4 engineering teams.</strong>
-                        </p>
-                    </div>
-
-                    <div class="achievement-card">
-                        <h5>Automation</h5>
-                        <p>
-                            Increased automated regression testing from <strong>0% to 70%+</strong> using Cypress
-                            integrated into CI/CD pipelines.
-                        </p>
-                    </div>
-
-                    <div class="achievement-card">
-                        <h5>DevSecOps</h5>
-                        <p>
-                            Automated Azure Key Vault secret rotation and modernized CI/CD using Terraform, GitHub
-                            Actions, OIDC, Managed Identity and Azure PIM.
-                        </p>
-                    </div>
-
-                    <div class="achievement-card">
-                        <h5>Observability</h5>
-                        <p>
-                            Built monitoring and automated incident generation using Azure Monitor, Log Analytics,
-                            Power BI, Interlink and ServiceNow, reducing MTTR by <strong>75%</strong>.
-                        </p>
-                    </div>
-
-                    <div class="achievement-card">
-                        <h5>AI Engineering</h5>
-                        <p>
-                            Implemented Azure OpenAI, Azure AI Search, RAG, hallucination detection, bias evaluation
-                            and responsible AI guardrails.
-                        </p>
+                        <h5><i class="fas fa-chart-pie"></i> Operational Analytics</h5>
+                        <p>Developed dynamic analytics dashboards providing real-time visibility into customer
+                            acquisition, scheduling metrics, and revenue KPIs.</p>
                     </div>
                 </div>
 
-                <div class="tech-stack">
-                    <strong>Tech Stack:</strong>
-                    .NET • React • Azure • AKS • Terraform • GitHub Actions • Azure SQL • Azure API Management • Azure AI Search • Azure OpenAI • Azure Service Bus • Cypress • Power BI • Kubernetes
+                <div class="tech-stack" style="font-size: 0.92rem; color: rgba(255, 255, 255, 0.85);">
+                    <strong style="color: var(--accent-pink);">Tech Stack:</strong>
+                    React.js • Node.js • Express • SQL Database • REST APIs • Internal Dashboard Architectures
                 </div>
             </article>
 
-            <article class="experience-entry">
-                <div class="experience-header">
-                    <a href="https://wiingy.com/" target="_blank">
-                        <img src="../images/wiingy.png" alt="Wingingy Logo" class="company-logo">
-                    </a>
-
-                    <div class="company-info">
-                        <h3>Software Developer Intern</h3>
-                        <h4>Wiingy</h4>
-                        <span class="duration">Nov 2023 – May 2024</span>
-                    </div>
-                </div>
-
-                <p class="experience-summary">
-                    Worked as a full-stack developer, migrating Excel data and scripts into comprehensive internal
-                    hub-based tools, significantly increasing revenue.
-                </p>
-            </article>
-
+            <!-- CSSOLVER -->
             <article class="experience-entry">
                 <div class="experience-header">
                     <a href="https://cssolver.com/" target="_blank">
                         <img src="../images/cssolver.png" alt="CsSolver Logo" class="company-logo">
                     </a>
 
-                    <div class="company-info">
-                        <h3>Software Development Engineer</h3>
-                        <h4>CsSolver</h4>
-                        <span class="duration">Dec 2022 – Oct 2023</span>
+                    <div class="company-info" style="flex: 1;">
+                        <div
+                            style="display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 8px;">
+                            <div>
+                                <h3 style="font-size: 1.35rem; font-weight: 700; color: #fff; margin: 0 0 4px;">Software
+                                    Development Engineer</h3>
+                                <h4 style="font-size: 1.1rem; font-weight: 500; color: var(--accent-pink); margin: 0;">
+                                    CsSolver</h4>
+                            </div>
+                            <div style="text-align: right;">
+                                <span class="duration"
+                                    style="background: rgba(255, 255, 255, 0.08); padding: 4px 12px; border-radius: 999px; font-size: 0.88rem; display: inline-block;">
+                                    Dec 2022 – Oct 2023
+                                </span>
+                                <div style="font-size: 0.82rem; color: rgba(255, 255, 255, 0.6); margin-top: 4px;">
+                                    Remote</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <p class="experience-summary">
-                    Developed REST APIs and full-stack websites using ReactJS, Bootstrap, MongoDB, and ExpressJS.
+                <p class="experience-summary"
+                    style="font-size: 1.02rem; line-height: 1.65; color: rgba(255, 255, 255, 0.9);">
+                    Developed end-to-end full-stack web applications and robust REST APIs utilizing modern JavaScript
+                    frameworks, MongoDB persistence, and responsive customer-facing interfaces.
                 </p>
+
+                <div class="achievement-grid">
+                    <div class="achievement-card">
+                        <h5><i class="fas fa-server"></i> API Development</h5>
+                        <p>Designed and documented RESTful micro-endpoints supporting authentication, user profiles, and
+                            responsive data querying.</p>
+                    </div>
+                    <div class="achievement-card">
+                        <h5><i class="fas fa-desktop"></i> Full-Stack Engineering</h5>
+                        <p>Integrated React frontends with Express and MongoDB backends, ensuring cross-browser
+                            compatibility and rapid page load performance.</p>
+                    </div>
+                </div>
+
+                <div class="tech-stack" style="font-size: 0.92rem; color: rgba(255, 255, 255, 0.85);">
+                    <strong style="color: var(--accent-pink);">Tech Stack:</strong>
+                    React.js • Node.js • Express.js • MongoDB • JavaScript (ES6+) • Bootstrap • RESTful APIs
+                </div>
             </article>
         </div>
     </section>
 
+    <!-- Global Footer -->
     <footer class="sub-pages-footer">
-        <ul>
-            <a href="https://x.com/anmolollol" target="_blank">
-                <li>Twitter</li>
-            </a>
-            <a href="https://github.com/12xghostking" target="_blank">
-                <li>GitHub</li>
-            </a>
-            <a href="https://www.linkedin.com/in/anmol-bakshi-2a92a1218/" target="_blank">
-                <li>LinkedIn</li>
-            </a>
+        <ul style="display: flex; gap: 20px; list-style: none; padding: 20px; justify-content: center;">
+            <li><a href="https://x.com/anmolollol" target="_blank"
+                    style="display: flex; align-items: center; gap: 6px;"><i class="fab fa-twitter"></i> Twitter</a>
+            </li>
+            <li><a href="https://github.com/12xghostking" target="_blank"
+                    style="display: flex; align-items: center; gap: 6px;"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/anmol-bakshi-2a92a1218/" target="_blank"
+                    style="display: flex; align-items: center; gap: 6px;"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </li>
+            <li><a href="mailto:sirkinggreat@gmail.com" style="display: flex; align-items: center; gap: 6px;"><i
+                        class="fas fa-envelope"></i> Email</a></li>
         </ul>
     </footer>
 </body>
