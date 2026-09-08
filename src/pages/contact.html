@@ -3,41 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact Anmol</title>
+    <title>Anmol Bakshi | Get In Touch • Connect & Collaborate</title>
+    <meta name="description" content="Get in touch with Anmol Bakshi, Software Engineer at Optum specializing in Microsoft Azure, DevSecOps, and Applied AI.">
     <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
+    <!-- Floating Global Resume Bubble -->
+    <a href="https://drive.google.com/file/d/1M3r0CsTXHQgy0-f-5Xypg5fsP-s3IoOb/view?usp=drive_link" target="_blank" class="floating-resume-bubble" aria-label="Download Resume">
+        <i class="fas fa-file-alt"></i>
+        <span class="tooltip-text">Download My Resume</span>
+    </a>
 
-    <header>
-        <ul>
-            <a href="../../index.html"><li>Home</li></a>
-            <a href="contact.html"><li>Contact</li></a>
-        </ul>
-    </header>
+    <!-- Unified Glass Navigation Bar -->
+    <nav class="site-nav">
+        <div class="nav-glass-bar">
+            <a href="../../index.html" class="nav-brand">AB<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="work.html" class="nav-link">Initiatives</a></li>
+                <li><a href="stack.html" class="nav-link">Stack</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
     <section>
-        <div class="form-submit">
-            <h2 class="subtitle"><a href="mailto:sirkinggreat@gmail.com">Click this to send email</a></h2>
-           
-        </div>
+        <h2 class="subtitle">Contact</h2>
 
+        <div class="contact-page-container">
+            <!-- Hero Header -->
+            <div class="stack-hero">
+                <div class="stack-badge-tag">
+                    <i class="fas fa-paper-plane"></i> Let's Build Something Meaningful Together
+                </div>
+                <p class="stack-hero-desc">
+                    Whether you have an inquiry regarding enterprise cloud architecture, DevSecOps pipelines, generative AI systems, or full-time software engineering roles, my inbox is open.
+                </p>
+            </div>
+
+            <!-- Dual Column Layout -->
+            <div class="contact-grid">
+                <!-- Direct Channels Sidebar -->
+                <aside class="contact-info-card">
+                    <div>
+                        <h3 style="font-size: 1.35rem; font-weight: 700; color: #fff; margin: 0 0 8px;">Direct Channels</h3>
+                        <p style="margin: 0; font-size: 0.95rem; color: rgba(255, 255, 255, 0.75); line-height: 1.5;">
+                            Feel free to reach out directly via email, connect on LinkedIn, or inspect my open-source code on GitHub.
+                        </p>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 14px;">
+                        <!-- Email with Copy Button -->
+                        <div class="contact-channel-item" style="cursor: pointer;" id="emailCopyCard" title="Click to copy email">
+                            <div class="contact-channel-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div style="flex: 1; overflow: hidden;">
+                                <div style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.55); text-transform: uppercase; letter-spacing: 0.5px;">Email Address</div>
+                                <div style="font-size: 0.95rem; font-weight: 500; color: #fff; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">
+                                    sirkinggreat@gmail.com
+                                </div>
+                            </div>
+                            <button id="copyBtn" class="btn btn-outline btn-sm" style="padding: 6px 12px; font-size: 0.78rem;">
+                                <i class="fas fa-copy"></i> Copy
+                            </button>
+                        </div>
+
+                        <!-- Location -->
+                        <div class="contact-channel-item">
+                            <div class="contact-channel-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.55); text-transform: uppercase; letter-spacing: 0.5px;">Location</div>
+                                <div style="font-size: 0.95rem; font-weight: 500; color: #fff;">Gurugram, India</div>
+                            </div>
+                        </div>
+
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/anmol-bakshi-2a92a1218/" target="_blank" class="contact-channel-item">
+                            <div class="contact-channel-icon">
+                                <i class="fab fa-linkedin-in"></i>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.55); text-transform: uppercase; letter-spacing: 0.5px;">LinkedIn Profile</div>
+                                <div style="font-size: 0.95rem; font-weight: 500; color: #fff;">/in/anmol-bakshi-2a92a1218</div>
+                            </div>
+                        </a>
+
+                        <!-- GitHub -->
+                        <a href="https://github.com/12xghostking" target="_blank" class="contact-channel-item">
+                            <div class="contact-channel-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.55); text-transform: uppercase; letter-spacing: 0.5px;">GitHub</div>
+                                <div style="font-size: 0.95rem; font-weight: 500; color: #fff;">github.com/12xghostking</div>
+                            </div>
+                        </a>
+
+                        <!-- Twitter/X -->
+                        <a href="https://x.com/anmolollol" target="_blank" class="contact-channel-item">
+                            <div class="contact-channel-icon">
+                                <i class="fab fa-twitter"></i>
+                            </div>
+                            <div>
+                                <div style="font-size: 0.8rem; color: rgba(255, 255, 255, 0.55); text-transform: uppercase; letter-spacing: 0.5px;">Twitter / X</div>
+                                <div style="font-size: 0.95rem; font-weight: 500; color: #fff;">@anmolollol</div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Status Pill -->
+                    <div style="background: rgba(0, 255, 136, 0.08); border: 1px solid rgba(0, 255, 136, 0.25); border-radius: 12px; padding: 14px; display: flex; align-items: center; gap: 10px; margin-top: auto;">
+                        <span class="status-pulse-dot"></span>
+                        <span style="font-size: 0.86rem; color: #00ff88; font-weight: 500;">
+                            Actively considering impactful engineering roles & consulting.
+                        </span>
+                    </div>
+                </aside>
+
+                <!-- Interactive Contact Form Card -->
+                <div class="contact-form-card">
+                    <div>
+                        <h3 style="font-size: 1.35rem; font-weight: 700; color: #fff; margin: 0 0 8px;">Send a Message</h3>
+                        <p style="margin: 0; font-size: 0.95rem; color: rgba(255, 255, 255, 0.75);">
+                            Select an inquiry topic and share details below. This will prepare a direct email addressed to Anmol.
+                        </p>
+                    </div>
+
+                    <!-- Topic Selector Chips -->
+                    <div class="form-group">
+                        <label class="form-label">Inquiry Area</label>
+                        <div class="topic-chips-group">
+                            <span class="topic-chip selected" data-topic="Full-Time Engineering Role">Full-Time Engineering Role</span>
+                            <span class="topic-chip" data-topic="Cloud Platform & Architecture">Cloud & Azure Platform</span>
+                            <span class="topic-chip" data-topic="DevSecOps & IaC Automation">DevSecOps & IaC</span>
+                            <span class="topic-chip" data-topic="Applied AI & RAG Solutions">Applied AI & RAG</span>
+                            <span class="topic-chip" data-topic="General Technical Inquiry">General Inquiry</span>
+                        </div>
+                    </div>
+
+                    <form id="contactForm" onsubmit="handleContactSubmit(event)" style="display: flex; flex-direction: column; gap: 16px;">
+                        <div class="form-row-dual">
+                            <div class="form-group">
+                                <label class="form-label" for="senderName">Your Name *</label>
+                                <input type="text" id="senderName" class="form-input" placeholder="Alex Morgan" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label" for="senderEmail">Your Email *</label>
+                                <input type="email" id="senderEmail" class="form-input" placeholder="alex@company.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="subjectLine">Subject *</label>
+                            <input type="text" id="subjectLine" class="form-input" value="Opportunity Discussion: Full-Time Engineering Role" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="messageContent">Message *</label>
+                            <textarea id="messageContent" rows="5" class="form-textarea" placeholder="Hello Anmol, I came across your portfolio and wanted to discuss..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="align-self: flex-start; padding: 12px 30px;">
+                            <i class="fas fa-paper-plane"></i> Send Direct Message
+                        </button>
+                    </form>
+
+                    <div id="copyToast" style="display: none; background: rgba(0, 255, 136, 0.15); border: 1px solid #00ff88; color: #00ff88; padding: 10px 16px; border-radius: 10px; font-size: 0.9rem; text-align: center;">
+                        <i class="fas fa-check-circle"></i> Email copied to clipboard: sirkinggreat@gmail.com
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-
+    <!-- Global Footer -->
     <footer class="sub-pages-footer">
-        <ul>
-            <a href="https://twitter.com/Anmolbakshi14" target="_blank">
-                <li>Twitter</li>
-            </a>
-            <a href="https://github.com/12xghostking" target="_blank">
-                <li>GitHub</li>
-            </a>
-            <a href="https://www.linkedin.com/in/anmol-bakshi-2a92a1218/" target="_blank">
-                <li>LinkedIn</li>
-            </a>
-            </a>
+        <ul style="display: flex; gap: 20px; list-style: none; padding: 20px; justify-content: center;">
+            <li><a href="https://x.com/anmolollol" target="_blank" style="display: flex; align-items: center; gap: 6px;"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="https://github.com/12xghostking" target="_blank" style="display: flex; align-items: center; gap: 6px;"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/anmol-bakshi-2a92a1218/" target="_blank" style="display: flex; align-items: center; gap: 6px;"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="mailto:sirkinggreat@gmail.com" style="display: flex; align-items: center; gap: 6px;"><i class="fas fa-envelope"></i> Email</a></li>
         </ul>
     </footer>
 
+    <script>
+        // Copy Email to Clipboard
+        const emailCopyCard = document.getElementById('emailCopyCard');
+        const copyBtn = document.getElementById('copyBtn');
+        const copyToast = document.getElementById('copyToast');
+
+        function copyEmailToClipboard() {
+            navigator.clipboard.writeText('sirkinggreat@gmail.com').then(() => {
+                copyBtn.innerHTML = '<i class="fas fa-check"></i> Copied!';
+                copyToast.style.display = 'block';
+                setTimeout(() => {
+                    copyBtn.innerHTML = '<i class="fas fa-copy"></i> Copy';
+                    copyToast.style.display = 'none';
+                }, 3000);
+            });
+        }
+
+        emailCopyCard.addEventListener('click', copyEmailToClipboard);
+
+        // Topic chips selection
+        let selectedTopic = 'Full-Time Engineering Role';
+        const topicChips = document.querySelectorAll('.topic-chip');
+        const subjectInput = document.getElementById('subjectLine');
+
+        topicChips.forEach(chip => {
+            chip.addEventListener('click', () => {
+                topicChips.forEach(c => c.classList.remove('selected'));
+                chip.classList.add('selected');
+                selectedTopic = chip.getAttribute('data-topic');
+                subjectInput.value = 'Inquiry: ' + selectedTopic;
+            });
+        });
+
+        // Contact Form Submission (mailto launch)
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            const name = document.getElementById('senderName').value;
+            const email = document.getElementById('senderEmail').value;
+            const subject = document.getElementById('subjectLine').value;
+            const message = document.getElementById('messageContent').value;
+
+            const bodyText = encodeURIComponent(`Hi Anmol,\n\nName: ${name}\nEmail: ${email}\nTopic: ${selectedTopic}\n\nMessage:\n${message}`);
+            const mailtoUrl = `mailto:sirkinggreat@gmail.com?subject=${encodeURIComponent(subject)}&body=${bodyText}`;
+
+            window.location.href = mailtoUrl;
+        }
+    </script>
 </body>
 </html>

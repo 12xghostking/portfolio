@@ -9,12 +9,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-<header>
-    <ul>
-        <a href="../../index.html"><li>Home</li></a>
-        <a href="contact.html"><li>Contact</li></a>
-    </ul>
-</header>
+    <!-- Unified Glass Navigation Bar -->
+    <nav class="site-nav">
+        <div class="nav-glass-bar">
+            <a href="../../index.html" class="nav-brand">AB<span class="dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="../../index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="experience.html" class="nav-link">Experience</a></li>
+                <li><a href="work.html" class="nav-link">Projects</a></li>
+                <li><a href="stack.html" class="nav-link active">Stack</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
 <a href="https://drive.google.com/file/d/1M3r0CsTXHQgy0-f-5Xypg5fsP-s3IoOb/view?usp=drive_link" target="_blank" class="floating-resume-bubble" aria-label="Download Resume">
     <i class="fas fa-file-alt"></i>
@@ -326,19 +334,15 @@
     </div>
 </section>
 
-<footer class="sub-pages-footer">
-    <ul>
-        <a href="https://x.com/anmolollol" target="_blank">
-            <li>Twitter</li>
-        </a>
-        <a href="https://github.com/12xghostking" target="_blank">
-            <li>GitHub</li>
-        </a>
-        <a href="https://www.linkedin.com/in/anmol-bakshi-2a92a1218/" target="_blank">
-            <li>LinkedIn</li>
-        </a>
-    </ul>
-</footer>
+    <!-- Global Footer -->
+    <footer class="sub-pages-footer">
+        <ul style="display: flex; gap: 20px; list-style: none; padding: 20px; justify-content: center;">
+            <li><a href="https://x.com/anmolollol" target="_blank" style="display: flex; align-items: center; gap: 6px;"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="https://github.com/12xghostking" target="_blank" style="display: flex; align-items: center; gap: 6px;"><i class="fab fa-github"></i> GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/anmol-bakshi-2a92a1218/" target="_blank" style="display: flex; align-items: center; gap: 6px;"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="mailto:sirkinggreat@gmail.com" style="display: flex; align-items: center; gap: 6px;"><i class="fas fa-envelope"></i> Email</a></li>
+        </ul>
+    </footer>
 
 <script>
     // Interactive Domain Filter
