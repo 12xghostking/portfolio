@@ -443,3 +443,349 @@ h2:hover {
         grid-template-columns: 1fr;
     }
 }
+
+/* =======================================================
+   STACK PAGE STYLES
+   ======================================================= */
+
+.stack-page-container {
+    width: min(92%, 1100px);
+    margin: 10px auto 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.stack-hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stack-badge-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: rgb(255, 0, 166);
+    background: rgba(255, 0, 166, 0.12);
+    border: 1px solid rgba(255, 0, 166, 0.35);
+    padding: 6px 18px;
+    border-radius: 999px;
+    margin-bottom: 12px;
+    box-shadow: 0 0 15px rgba(255, 0, 166, 0.15);
+}
+
+.stack-hero-desc {
+    max-width: 740px;
+    margin: 12px auto 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.85);
+}
+
+/* Impact Metrics Ribbon */
+.stack-metrics-ribbon {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 14px;
+    margin: 5px 0 10px;
+}
+
+.metric-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 16px;
+    padding: 16px 12px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.metric-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(255, 0, 166, 0.45);
+    box-shadow: 0 8px 24px rgba(255, 0, 166, 0.18);
+}
+
+.metric-number {
+    font-size: 1.85rem;
+    font-weight: 700;
+    color: rgb(255, 0, 166);
+    line-height: 1.1;
+    margin-bottom: 4px;
+}
+
+.metric-label {
+    font-size: 0.82rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.75);
+    line-height: 1.35;
+    letter-spacing: 0.3px;
+}
+
+/* Category Filter Buttons */
+.stack-filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 5px 0 10px;
+}
+
+.stack-filter-btn {
+    background: rgba(255, 255, 255, 0.05);
+    color: rgba(255, 255, 255, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 0.92rem;
+    font-weight: 500;
+    padding: 8px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    outline: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.stack-filter-btn:hover {
+    background: rgba(255, 0, 166, 0.15);
+    color: #fff;
+    border-color: rgb(255, 0, 166);
+    transform: translateY(-1px);
+}
+
+.stack-filter-btn.active {
+    background: rgb(255, 0, 166);
+    color: #fff;
+    border-color: rgb(255, 0, 166);
+    box-shadow: 0 4px 18px rgba(255, 0, 166, 0.4);
+}
+
+/* Stack Cards Grid */
+.stack-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+}
+
+.stack-card {
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 26px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stack-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(255, 0, 166, 0.45);
+    box-shadow: 0 12px 35px rgba(255, 0, 166, 0.12);
+}
+
+.stack-card-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.stack-card-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    background: rgba(255, 0, 166, 0.14);
+    border: 1px solid rgba(255, 0, 166, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    color: rgb(255, 0, 166);
+    flex-shrink: 0;
+    box-shadow: 0 0 15px rgba(255, 0, 166, 0.15);
+}
+
+.stack-card-titles {
+    display: flex;
+    flex-direction: column;
+}
+
+.stack-card-titles h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    color: #fff;
+    text-align: left;
+}
+
+.stack-card-tag {
+    font-size: 0.78rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 3px;
+    font-weight: 400;
+}
+
+.stack-card-desc {
+    font-size: 0.94rem;
+    line-height: 1.6;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+}
+
+/* Skills Pill Flow */
+.stack-pills-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 2px;
+}
+
+.tech-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: rgba(0, 0, 0, 0.32);
+    border: 1px solid rgba(255, 255, 255, 0.11);
+    border-radius: 10px;
+    padding: 7px 12px;
+    font-size: 0.88rem;
+    color: #f3f3f3;
+    transition: all 0.2s ease;
+    cursor: default;
+    user-select: none;
+}
+
+.tech-pill:hover {
+    background: rgba(255, 0, 166, 0.16);
+    border-color: rgba(255, 0, 166, 0.5);
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 0, 166, 0.2);
+}
+
+.tech-pill i {
+    color: rgb(255, 0, 166);
+    font-size: 0.82rem;
+}
+
+.tech-pill-badge {
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.4px;
+    background: rgba(255, 0, 166, 0.22);
+    color: #ff8ad8;
+    border: 1px solid rgba(255, 0, 166, 0.35);
+    padding: 2px 6px;
+    border-radius: 6px;
+    margin-left: 2px;
+}
+
+/* Stack Card Highlight Note */
+.stack-card-highlight {
+    padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, 0.09);
+    font-size: 0.86rem;
+    color: rgba(255, 255, 255, 0.7);
+    line-height: 1.55;
+    margin-top: auto;
+}
+
+.stack-card-highlight strong {
+    color: rgb(255, 0, 166);
+}
+
+/* Responsive adjustments */
+@media only screen and (max-width: 900px) {
+    .stack-cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stack-metrics-ribbon {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .stack-page-container {
+        width: 88%;
+        gap: 22px;
+        margin-bottom: 50px;
+    }
+
+    .stack-hero-desc {
+        font-size: 0.95rem;
+    }
+
+    .stack-metrics-ribbon {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .metric-number {
+        font-size: 1.5rem;
+    }
+
+    .metric-label {
+        font-size: 0.75rem;
+    }
+
+    .stack-filter-bar {
+        gap: 8px;
+    }
+
+    .stack-filter-btn {
+        font-size: 0.82rem;
+        padding: 6px 14px;
+    }
+
+    .stack-card {
+        padding: 18px;
+        gap: 14px;
+    }
+
+    .stack-card-header {
+        gap: 12px;
+    }
+
+    .stack-card-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    .stack-card-titles h3 {
+        font-size: 1.1rem;
+    }
+
+    .tech-pill {
+        font-size: 0.82rem;
+        padding: 6px 10px;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
